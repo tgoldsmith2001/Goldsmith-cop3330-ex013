@@ -20,6 +20,7 @@ public class Main {
         double T = Double.parseDouble(Str3);
         double N = Double.parseDouble(Str4);
         double total = P * Math.pow((1 + (R / N / 100)), N * T);
+        //Multiply by 100, round then divide by 100 to round to 2 decimal places
         double rounded_Total = Math.round(total * 100.0) / 100.0;
         System.out.format("$%.2f invested at %.2f%% for %.0f years compounded %.0f times " +
                 "per year is $%.2f.", P, R, T, N, rounded_Total);
